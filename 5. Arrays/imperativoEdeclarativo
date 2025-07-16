@@ -1,0 +1,23 @@
+//calculando a média desses dois alunos usando a abordagem imperativa e a declarativa
+const alunos = [
+    { nome: 'João', nota: 7.9 },
+    { nome: 'Maria', nota: 9.2 }
+]
+
+//Imperativo: possui todos os detalhes de como fazer algo, sendo mais explicativo e menos reutilizável
+for (let i = 0; i < alunos.length; i++) {
+    media1 += alunos[i].nota
+} 
+console.log("Imperativo: ", media1 / alunos.length)
+
+
+// declarativo: foca no que tem que ser feito, sem se preocupar com o como, sendo mais reutilizável e menos explicativo
+const getNota = aluno => aluno.nota
+const soma = (total, atual) => total + atual
+const media2 = alunos.map(getNota).reduce(soma) / alunos.length
+
+console.log("Declarativo: ", media2)
+
+// select codigo, nome, email from clientes where ativo = 1   (comando SQL) -> declarativo
+// select * from alunos where nota > 7  -> declarativo
+// SQL é uma linguagem declarativa, pois você diz o que quer e não como fazer

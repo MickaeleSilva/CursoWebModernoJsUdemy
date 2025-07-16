@@ -1,0 +1,61 @@
+//CÓDIGO NÃO EXECUTÁVEL!!
+
+// Procedural - passando valores para um procedimento que irá manipular esses valores, ou seja, uma função que manipula dados
+processamento(valor1, valor2, valor3)
+
+// OO - 
+objeto = {
+atributo1: valor1,
+atributo2: valor2,
+processamento() { // comportamento
+    //console.log(this.atributo1 + this.atributo2)
+    }
+}
+
+objeto.processamento() // invocamos esse processsamento a partir do dado
+// processamento pertence a objeto, e dentro do bjeto tems os valores usados dentro do processamento
+
+/* 
+Princípios importantes:
+1. Abstração: a simplificação na passagem de um objeto real para um na linguagem de programação
+2. Encapsulamento: exemplo..      */
+function criarContaBancaria(saldoInicial) {
+    let saldo = saldoInicial; // Atributo privado
+  
+    function depositar(valor) {
+      if (valor > 0) {
+        saldo += valor;
+        console.log(`Depósito de ${valor} realizado com sucesso.`);
+      } else {
+        console.log("Valor inválido para depósito.");
+      }
+    }
+  
+    function sacar(valor) {
+      if (valor > 0 && valor <= saldo) {
+        saldo -= valor;
+        console.log(`Saque de ${valor} realizado com sucesso.`);
+      } else {
+        console.log("Saldo insuficiente ou valor inválido para saque.");
+      }
+    }
+  
+    function getSaldo() {
+      return saldo;
+    }
+  
+    return {
+      depositar,
+      sacar,
+      getSaldo
+    };
+  }
+  
+  let minhaConta = criarContaBancaria(1000);
+  minhaConta.depositar(500); // Saída: Depósito de 500 realizado com sucesso.
+  minhaConta.sacar(200); // Saída: Saque de 200 realizado com sucesso.
+  console.log(minhaConta.getSaldo()); // Saída: 1300
+  
+/*
+3. Herança (prototype)
+4. Polimorfismo
