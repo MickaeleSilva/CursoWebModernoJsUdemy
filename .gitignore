@@ -1,1 +1,16 @@
 .vscode
+node_modules
+
+#  Arquivos de sistema/lixo
+.DS_Store
+Thumbs.db
+
+#  Logs de execução/erros
+*.log
+npm-debug.log*
+
+#  Arquivos temporários comuns
+*.tmp
+*.swp
+tmp/
+temp/

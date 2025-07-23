@@ -13,7 +13,7 @@ module.exports = {
   },
 };
 
-// será ignorado os exports seguintes
+// serão ignorados os exports a seguir
 
 // 2.
 exports.bemVindo2 = "Bem Vindo ao Node!";

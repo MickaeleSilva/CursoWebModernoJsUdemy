@@ -1,0 +1,26 @@
+{
+  "name": "funcionarios",
+  "version": "1.0.0",
+  "description": "Meu curso Web Moderno",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MickaeleSilva/CursoWebModernoJsUdemy.git"
+  },
+  "keywords": [
+    "keywords:",
+    "node",
+    "backend",
+    "api",
+    "javascript"
+  ],
+  "author": "Mickaele Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MickaeleSilva/CursoWebModernoJsUdemy/issues"
+  },
+  "homepage": "https://github.com/MickaeleSilva/CursoWebModernoJsUdemy#readme"
+}

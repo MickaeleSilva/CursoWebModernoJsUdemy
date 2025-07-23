@@ -1,4 +1,4 @@
-const cumprimento = require("./saudacoesModulo");
+const cumprimento = require("./moduloA");
 
 console.log(cumprimento.ola);
 console.log(cumprimento.bemVindo);
